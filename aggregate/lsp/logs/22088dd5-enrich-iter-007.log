@@ -1,0 +1,18 @@
+[2026-04-21T09:16:38Z] === ENRICH ITERATION 7 START | repo=apple/coremltools sha=22088dd5 ===
+[2026-04-21T09:16:38Z] [iter=7] PHASE START: enrich repo=apple/coremltools sha=22088dd5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/22088dd5-enrich-iter-007.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz
+[2026-04-21T09:16:38Z] [iter=7] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-21T09:24:11Z] [iter=7] AST store loaded triples=33703992 load_secs=438 mem_mb=1207 MB
+[2026-04-21T09:24:11Z] [iter=7] Step 2: Finding LSP targets mem_mb=1207 MB
+[2026-04-21T09:25:37Z] [iter=7] LSP targets found call_sites=286482 imports=4595 extends=1894 implements=2 secs=85
+[2026-04-21T09:25:39Z] [iter=7] Loaded checkpoint partial graph triples=57232
+[2026-04-21T09:26:45Z] [iter=7] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1207 MB
+[2026-04-21T09:30:40Z] [iter=7] Position index built positions=2147418 nodes_with_types=2780991 secs=235 mem_mb=4937 MB
+[2026-04-21T09:30:40Z] [iter=7] Step 3: Starting LSP resolution mem_mb=4937 MB already_completed_types=[] already_completed_files=14
+[2026-04-21T09:30:40Z] [iter=7] Resolving target type target_type=call_site count=286482
+[2026-04-21T09:30:42Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=0 resolved=0 errors=0 current=coremltools/test/test_numpy_nn_layers.py
+[2026-04-21T12:47:11Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=210.6 files_done=1 resolved=453 errors=787 current=coremltools/converters/keras/_keras2_converter.py
+[2026-04-21T12:58:24Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=221.8 files_done=2 resolved=561 errors=833 current=coremltools/proto/NeuralNetwork_pb2.py
+[2026-04-21T13:16:54Z] [iter=7] CHECKPOINT TRIGGERED elapsed_min=240.3 files_completed=16 new_files_this_iter=2 mem_mb=4998 MB
+[2026-04-21T13:16:54Z] [iter=7] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz triples=65273
+[2026-04-21T13:16:55Z] [iter=7] Checkpoint written, exiting with code 7
+[2026-04-21T13:16:55Z] [iter=7] PHASE END: enrich (checkpointed) elapsed_s=14416 elapsed_min=240.3 files_completed=16

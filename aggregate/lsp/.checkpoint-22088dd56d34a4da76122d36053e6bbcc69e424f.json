@@ -1,6 +1,7 @@
 {
   "commit_sha": "22088dd56d34a4da76122d36053e6bbcc69e424f",
   "completed_files": [
+    "coremltools/converters/keras/_keras2_converter.py",
     "coremltools/converters/nnssa/commons/serialization/file_reader.py",
     "coremltools/converters/nnssa/coreml/ssa_converter.py",
     "coremltools/converters/nnssa/frontend/graph_pass/identity_outputs.py",
@@ -10,6 +11,7 @@
     "coremltools/test/test_io_types.py",
     "coremltools/test/test_keras2.py",
     "coremltools/test/test_keras_numeric.py",
+    "coremltools/test/test_numpy_nn_layers.py",
     "coremltools/test/test_recurrent_stress_tests.py",
     "deps/protobuf/python/google/protobuf/internal/message_test.py",
     "deps/protobuf/python/google/protobuf/internal/test_util.py",
@@ -22,13 +24,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz",
     "call_sites": 286482,
     "import_statements": 4595,
-    "call_targets_resolved": 2395,
+    "call_targets_resolved": 3200,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 6019,
+    "errors": 6928,
     "extends_clauses": 1894,
     "implements_clauses": 2,
     "import_modules_denormalized": 8080,
@@ -36,5 +38,5 @@
     "extends_class_denormalized": 279,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14411
+  "elapsed_seconds": 14416
 }
