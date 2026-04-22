@@ -1,0 +1,19 @@
+[2026-04-21T22:00:36Z] === ENRICH ITERATION 10 START | repo=apple/coremltools sha=22088dd5 ===
+[2026-04-21T22:00:36Z] [iter=10] PHASE START: enrich repo=apple/coremltools sha=22088dd5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/22088dd5-enrich-iter-010.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz
+[2026-04-21T22:00:36Z] [iter=10] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-21T22:07:53Z] [iter=10] AST store loaded triples=33703992 load_secs=426 mem_mb=1173 MB
+[2026-04-21T22:07:53Z] [iter=10] Step 2: Finding LSP targets mem_mb=1173 MB
+[2026-04-21T22:09:08Z] [iter=10] LSP targets found call_sites=286482 imports=4595 extends=1894 implements=2 secs=75
+[2026-04-21T22:09:12Z] [iter=10] Loaded checkpoint partial graph triples=81547
+[2026-04-21T22:10:13Z] [iter=10] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1173 MB
+[2026-04-21T22:13:32Z] [iter=10] Position index built positions=2147418 nodes_with_types=2780991 secs=199 mem_mb=4939 MB
+[2026-04-21T22:13:32Z] [iter=10] Step 3: Starting LSP resolution mem_mb=4939 MB already_completed_types=[] already_completed_files=19
+[2026-04-21T22:13:32Z] [iter=10] Resolving target type target_type=call_site count=286482
+[2026-04-21T22:13:34Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=0 resolved=0 errors=0 current=coremltools/converters/tensorflow/test/test_convnets.py
+[2026-04-21T23:24:13Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=83.6 files_done=1 resolved=6 errors=353 current=deps/protobuf/python/google/protobuf/internal/text_format_test.py
+[2026-04-22T00:37:36Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=157.0 files_done=2 resolved=33 errors=720 current=deps/protobuf/python/google/protobuf/internal/well_known_types_test.py
+[2026-04-22T01:55:05Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=234.5 files_done=3 resolved=85 errors=1107 current=deps/pybind11/tests/test_python_types.py
+[2026-04-22T02:01:18Z] [iter=10] CHECKPOINT TRIGGERED elapsed_min=240.7 files_completed=22 new_files_this_iter=3 mem_mb=4994 MB
+[2026-04-22T02:01:18Z] [iter=10] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz triples=86444
+[2026-04-22T02:01:19Z] [iter=10] Checkpoint written, exiting with code 7
+[2026-04-22T02:01:19Z] [iter=10] PHASE END: enrich (checkpointed) elapsed_s=14442 elapsed_min=240.7 files_completed=22
