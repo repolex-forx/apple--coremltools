@@ -1,0 +1,20 @@
+[2026-04-22T06:13:49Z] === ENRICH ITERATION 12 START | repo=apple/coremltools sha=22088dd5 ===
+[2026-04-22T06:13:49Z] [iter=12] PHASE START: enrich repo=apple/coremltools sha=22088dd5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/22088dd5-enrich-iter-012.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz
+[2026-04-22T06:13:49Z] [iter=12] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-22T06:21:08Z] [iter=12] AST store loaded triples=33703992 load_secs=426 mem_mb=1181 MB
+[2026-04-22T06:21:08Z] [iter=12] Step 2: Finding LSP targets mem_mb=1181 MB
+[2026-04-22T06:22:25Z] [iter=12] LSP targets found call_sites=286482 imports=4595 extends=1894 implements=2 secs=77
+[2026-04-22T06:22:29Z] [iter=12] Loaded checkpoint partial graph triples=93774
+[2026-04-22T06:23:29Z] [iter=12] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1181 MB
+[2026-04-22T06:27:16Z] [iter=12] Position index built positions=2147418 nodes_with_types=2780991 secs=226 mem_mb=4888 MB
+[2026-04-22T06:27:16Z] [iter=12] Step 3: Starting LSP resolution mem_mb=4888 MB already_completed_types=[] already_completed_files=30
+[2026-04-22T06:27:16Z] [iter=12] Resolving target type target_type=call_site count=286482
+[2026-04-22T06:27:18Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=0 resolved=0 errors=0 current=coremltools/converters/nnssa/frontend/tensorflow/graph_pass/functionalize_loops.py
+[2026-04-22T07:08:35Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=54.8 files_done=1 resolved=41 errors=180 current=coremltools/converters/nnssa/nnssa.py
+[2026-04-22T07:23:33Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=69.7 files_done=2 resolved=93 errors=245 current=deps/pybind11/tests/test_issues.py
+[2026-04-22T07:29:05Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=75.3 files_done=3 resolved=109 errors=269 current=coremltools/test/test_neural_networks.py
+[2026-04-22T07:41:32Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=87.7 files_done=4 resolved=130 errors=323 current=deps/protobuf/python/google/protobuf/internal/reflection_test.py
+[2026-04-22T10:15:01Z] [iter=12] CHECKPOINT TRIGGERED elapsed_min=241.2 files_completed=34 new_files_this_iter=4 mem_mb=4942 MB
+[2026-04-22T10:15:01Z] [iter=12] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz triples=99706
+[2026-04-22T10:15:02Z] [iter=12] Checkpoint written, exiting with code 7
+[2026-04-22T10:15:02Z] [iter=12] PHASE END: enrich (checkpointed) elapsed_s=14472 elapsed_min=241.2 files_completed=34

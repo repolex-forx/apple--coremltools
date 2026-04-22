@@ -8,7 +8,9 @@
     "coremltools/converters/nnssa/coreml/ssa_converter.py",
     "coremltools/converters/nnssa/frontend/graph_pass/identity_outputs.py",
     "coremltools/converters/nnssa/frontend/graph_pass/trace_constants.py",
+    "coremltools/converters/nnssa/frontend/tensorflow/graph_pass/functionalize_loops.py",
     "coremltools/converters/nnssa/frontend/tensorflow/parse.py",
+    "coremltools/converters/nnssa/nnssa.py",
     "coremltools/converters/tensorflow/test/test_convnets.py",
     "coremltools/models/neural_network.py",
     "coremltools/models/neural_network/builder.py",
@@ -21,6 +23,7 @@
     "coremltools/test/test_keras2.py",
     "coremltools/test/test_keras2_numeric.py",
     "coremltools/test/test_keras_numeric.py",
+    "coremltools/test/test_neural_networks.py",
     "coremltools/test/test_numpy_nn_layers.py",
     "coremltools/test/test_recurrent_stress_tests.py",
     "deps/protobuf/python/google/protobuf/internal/descriptor_test.py",
@@ -29,6 +32,7 @@
     "deps/protobuf/python/google/protobuf/internal/text_format_test.py",
     "deps/protobuf/python/google/protobuf/internal/well_known_types.py",
     "deps/protobuf/python/google/protobuf/internal/well_known_types_test.py",
+    "deps/pybind11/tests/test_issues.py",
     "deps/pybind11/tests/test_python_types.py",
     "deps/pybind11/tests/test_virtual_functions.py"
   ],
@@ -38,13 +42,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz",
     "call_sites": 286482,
     "import_statements": 4595,
-    "call_targets_resolved": 5120,
+    "call_targets_resolved": 5342,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 10982,
+    "errors": 11971,
     "extends_clauses": 1894,
     "implements_clauses": 2,
     "import_modules_denormalized": 8080,
@@ -52,5 +56,5 @@
     "extends_class_denormalized": 279,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14400
+  "elapsed_seconds": 14471
 }
