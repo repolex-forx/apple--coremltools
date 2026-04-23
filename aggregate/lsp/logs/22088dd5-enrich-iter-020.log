@@ -1,0 +1,16 @@
+[2026-04-23T16:08:59Z] === ENRICH ITERATION 20 START | repo=apple/coremltools sha=22088dd5 ===
+[2026-04-23T16:08:59Z] [iter=20] PHASE START: enrich repo=apple/coremltools sha=22088dd5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/22088dd5-enrich-iter-020.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz
+[2026-04-23T16:08:59Z] [iter=20] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-23T16:16:19Z] [iter=20] AST store loaded triples=33703992 load_secs=425 mem_mb=1204 MB
+[2026-04-23T16:16:19Z] [iter=20] Step 2: Finding LSP targets mem_mb=1204 MB
+[2026-04-23T16:17:41Z] [iter=20] LSP targets found call_sites=286482 imports=4595 extends=1894 implements=2 secs=82
+[2026-04-23T16:17:45Z] [iter=20] Loaded checkpoint partial graph triples=102223
+[2026-04-23T16:18:54Z] [iter=20] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1204 MB
+[2026-04-23T16:22:22Z] [iter=20] Position index built positions=2147418 nodes_with_types=2780991 secs=208 mem_mb=4982 MB
+[2026-04-23T16:22:22Z] [iter=20] Step 3: Starting LSP resolution mem_mb=4982 MB already_completed_types=[] already_completed_files=34
+[2026-04-23T16:22:22Z] [iter=20] Resolving target type target_type=call_site count=286482
+[2026-04-23T16:22:24Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=13.4 files_done=0 resolved=0 errors=0 current=deps/protobuf/python/google/protobuf/internal/reflection_test.py
+[2026-04-23T20:11:21Z] [iter=20] CHECKPOINT TRIGGERED elapsed_min=242.4 files_completed=34 new_files_this_iter=0 mem_mb=5040 MB
+[2026-04-23T20:11:21Z] [iter=20] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz triples=102223
+[2026-04-23T20:11:23Z] [iter=20] Checkpoint written, exiting with code 7
+[2026-04-23T20:11:23Z] [iter=20] PHASE END: enrich (checkpointed) elapsed_s=14542 elapsed_min=242.4 files_completed=34
