@@ -48,7 +48,7 @@
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 34878,
+    "errors": 35828,
     "extends_clauses": 1894,
     "implements_clauses": 2,
     "import_modules_denormalized": 8080,
