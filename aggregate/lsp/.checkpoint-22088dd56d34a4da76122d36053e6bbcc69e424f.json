@@ -28,6 +28,7 @@
     "coremltools/test/test_recurrent_stress_tests.py",
     "deps/protobuf/python/google/protobuf/internal/descriptor_test.py",
     "deps/protobuf/python/google/protobuf/internal/message_test.py",
+    "deps/protobuf/python/google/protobuf/internal/reflection_test.py",
     "deps/protobuf/python/google/protobuf/internal/test_util.py",
     "deps/protobuf/python/google/protobuf/internal/text_format_test.py",
     "deps/protobuf/python/google/protobuf/internal/well_known_types.py",
@@ -42,13 +43,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/22088dd56d34a4da76122d36053e6bbcc69e424f.nq.gz",
     "call_sites": 286482,
     "import_statements": 4595,
-    "call_targets_resolved": 5412,
+    "call_targets_resolved": 5427,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 36778,
+    "errors": 38085,
     "extends_clauses": 1894,
     "implements_clauses": 2,
     "import_modules_denormalized": 8080,
@@ -56,5 +57,5 @@
     "extends_class_denormalized": 279,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14515
+  "elapsed_seconds": 14426
 }
