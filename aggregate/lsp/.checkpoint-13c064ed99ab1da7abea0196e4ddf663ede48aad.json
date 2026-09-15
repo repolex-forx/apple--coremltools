@@ -1,0 +1,27 @@
+{
+  "commit_sha": "13c064ed99ab1da7abea0196e4ddf663ede48aad",
+  "completed_files": [
+    "deps/protobuf/src/google/protobuf/map_test.cc"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/apple/coremltools/lsp/13c064ed99ab1da7abea0196e4ddf663ede48aad",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/13c064ed99ab1da7abea0196e4ddf663ede48aad.nq.gz",
+    "call_sites": 255621,
+    "import_statements": 3984,
+    "call_targets_resolved": 23,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 1648,
+    "extends_clauses": 1543,
+    "implements_clauses": 2,
+    "import_modules_denormalized": 7203,
+    "import_symbols_denormalized": 2012,
+    "extends_class_denormalized": 209,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14465
+}

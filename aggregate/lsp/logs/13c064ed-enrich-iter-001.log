@@ -1,0 +1,16 @@
+[2026-09-14T23:51:12Z] === ENRICH ITERATION 1 START | repo=apple/coremltools sha=13c064ed ===
+[2026-09-14T23:51:12Z] [iter=1] PHASE START: enrich repo=apple/coremltools sha=13c064ed runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/13c064ed-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/13c064ed99ab1da7abea0196e4ddf663ede48aad.nq.gz
+[2026-09-14T23:51:12Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-15T00:00:17Z] [iter=1] AST store loaded triples=28840936 load_secs=537 mem_mb=1199 MB
+[2026-09-15T00:00:17Z] [iter=1] Step 2: Finding LSP targets mem_mb=1199 MB
+[2026-09-15T00:01:11Z] [iter=1] LSP targets found call_sites=255621 imports=3984 extends=1543 implements=2 secs=53
+[2026-09-15T00:01:52Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1199 MB
+[2026-09-15T00:04:03Z] [iter=1] Position index built positions=1865860 nodes_with_types=2409225 secs=131 mem_mb=4142 MB
+[2026-09-15T00:04:03Z] [iter=1] Step 3: Starting LSP resolution mem_mb=4142 MB already_completed_types=[] already_completed_files=0
+[2026-09-15T00:04:03Z] [iter=1] Resolving target type target_type=call_site count=255621
+[2026-09-15T00:04:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=0 resolved=0 errors=0 current=deps/protobuf/src/google/protobuf/map_test.cc
+[2026-09-15T00:44:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.1 files_done=1 resolved=17 errors=288 current=deps/caffe/src/caffe/proto/caffe.pb.cc
+[2026-09-15T03:52:17Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=241.1 files_completed=1 new_files_this_iter=1 mem_mb=4201 MB
+[2026-09-15T03:52:17Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/13c064ed99ab1da7abea0196e4ddf663ede48aad.nq.gz triples=22002
+[2026-09-15T03:52:18Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-09-15T03:52:18Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14466 elapsed_min=241.1 files_completed=1
