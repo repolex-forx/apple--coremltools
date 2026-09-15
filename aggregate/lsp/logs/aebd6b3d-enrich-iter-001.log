@@ -1,0 +1,19 @@
+[2026-09-15T06:16:33Z] === ENRICH ITERATION 1 START | repo=apple/coremltools sha=aebd6b3d ===
+[2026-09-15T06:16:33Z] [iter=1] PHASE START: enrich repo=apple/coremltools sha=aebd6b3d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/aebd6b3d-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/aebd6b3ddd48e286511805f5922815686126f7f7.nq.gz
+[2026-09-15T06:16:33Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-15T06:25:20Z] [iter=1] AST store loaded triples=28819059 load_secs=517 mem_mb=1175 MB
+[2026-09-15T06:25:20Z] [iter=1] Step 2: Finding LSP targets mem_mb=1175 MB
+[2026-09-15T06:26:26Z] [iter=1] LSP targets found call_sites=255527 imports=3967 extends=1542 implements=2 secs=66
+[2026-09-15T06:27:19Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1175 MB
+[2026-09-15T06:29:37Z] [iter=1] Position index built positions=1865241 nodes_with_types=2408414 secs=138 mem_mb=4240 MB
+[2026-09-15T06:29:37Z] [iter=1] Step 3: Starting LSP resolution mem_mb=4240 MB already_completed_types=[] already_completed_files=0
+[2026-09-15T06:29:37Z] [iter=1] Resolving target type target_type=call_site count=255527
+[2026-09-15T06:29:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.1 files_done=0 resolved=0 errors=0 current=deps/protobuf/src/google/protobuf/map_test_util_impl.h
+[2026-09-15T07:57:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.3 files_done=1 resolved=0 errors=527 current=deps/protobuf/src/google/protobuf/repeated_field_unittest.cc
+[2026-09-15T08:24:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.9 files_done=2 resolved=6 errors=688 current=deps/protobuf/src/google/protobuf/compiler/command_line_interface.cc
+[2026-09-15T09:28:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=192.1 files_done=3 resolved=20 errors=1078 current=deps/protobuf/src/google/protobuf/extension_set_unittest.cc
+[2026-09-15T09:56:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=220.0 files_done=4 resolved=23 errors=1248 current=deps/caffe/src/caffe/proto/caffe.pb.cc
+[2026-09-15T10:16:34Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=4 new_files_this_iter=4 mem_mb=4300 MB
+[2026-09-15T10:16:34Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/aebd6b3ddd48e286511805f5922815686126f7f7.nq.gz triples=20875
+[2026-09-15T10:16:35Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-09-15T10:16:35Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14402 elapsed_min=240.0 files_completed=4
