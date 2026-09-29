@@ -1,0 +1,16 @@
+[2026-09-28T23:09:35Z] === ENRICH ITERATION 20 START | repo=apple/coremltools sha=aebd6b3d ===
+[2026-09-28T23:09:35Z] [iter=20] PHASE START: enrich repo=apple/coremltools sha=aebd6b3d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/aebd6b3d-enrich-iter-020.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/aebd6b3ddd48e286511805f5922815686126f7f7.nq.gz
+[2026-09-28T23:09:35Z] [iter=20] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-28T23:15:48Z] [iter=20] AST store loaded triples=28819059 load_secs=362 mem_mb=1180 MB
+[2026-09-28T23:15:48Z] [iter=20] Step 2: Finding LSP targets mem_mb=1180 MB
+[2026-09-28T23:17:03Z] [iter=20] LSP targets found call_sites=255527 imports=3967 extends=1542 implements=2 secs=75
+[2026-09-28T23:17:04Z] [iter=20] Loaded checkpoint partial graph triples=26628
+[2026-09-28T23:18:07Z] [iter=20] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1180 MB
+[2026-09-28T23:21:04Z] [iter=20] Position index built positions=1865241 nodes_with_types=2408414 secs=177 mem_mb=4255 MB
+[2026-09-28T23:21:04Z] [iter=20] Step 3: Starting LSP resolution mem_mb=4255 MB already_completed_types=[] already_completed_files=4
+[2026-09-28T23:21:04Z] [iter=20] Resolving target type target_type=call_site count=255527
+[2026-09-28T23:21:07Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=0 resolved=0 errors=0 current=deps/caffe/src/caffe/proto/caffe.pb.cc
+[2026-09-29T03:11:28Z] [iter=20] CHECKPOINT TRIGGERED elapsed_min=241.9 files_completed=4 new_files_this_iter=0 mem_mb=4303 MB
+[2026-09-29T03:11:28Z] [iter=20] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/aebd6b3ddd48e286511805f5922815686126f7f7.nq.gz triples=26628
+[2026-09-29T03:11:29Z] [iter=20] Checkpoint written, exiting with code 7
+[2026-09-29T03:11:29Z] [iter=20] PHASE END: enrich (checkpointed) elapsed_s=14514 elapsed_min=241.9 files_completed=4
