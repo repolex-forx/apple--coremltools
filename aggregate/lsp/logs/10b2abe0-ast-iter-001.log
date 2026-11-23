@@ -1,0 +1,7 @@
+[2026-11-23T04:21:18Z] === AST ITERATION 1 START | repo=apple/coremltools sha=10b2abe0 ===
+[2026-11-23T04:21:18Z] [iter=1] PHASE START: ast repo=apple/coremltools sha=10b2abe0
+[2026-11-23T04:21:18Z] [iter=1] Building AST aggregate chunks
+[2026-11-23T05:05:46Z] [iter=1] AST chunks built count=6 triples=28228655
+[2026-11-23T05:05:46Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/10b2abe0a87b9da8b6e1d124efa19520d40d96d1/.complete
+[2026-11-23T05:05:46Z] [iter=1] PHASE END: ast elapsed_s=2669 elapsed_min=44.5
+[2026-11-23T05:05:46Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
