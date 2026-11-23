@@ -1,0 +1,17 @@
+[2026-11-23T12:35:39Z] === ENRICH ITERATION 14 START | repo=apple/coremltools sha=10b2abe0 ===
+[2026-11-23T12:35:39Z] [iter=14] PHASE START: enrich repo=apple/coremltools sha=10b2abe0 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/10b2abe0-enrich-iter-014.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/10b2abe0a87b9da8b6e1d124efa19520d40d96d1.nq.gz
+[2026-11-23T12:35:39Z] [iter=14] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T12:41:20Z] [iter=14] AST store loaded triples=28228624 load_secs=334 mem_mb=1158 MB
+[2026-11-23T12:41:20Z] [iter=14] Step 2: Finding LSP targets mem_mb=1158 MB
+[2026-11-23T12:42:05Z] [iter=14] LSP targets found call_sites=243920 imports=4093 extends=1490 implements=2 secs=45
+[2026-11-23T12:42:06Z] [iter=14] Loaded checkpoint partial graph triples=29142
+[2026-11-23T12:42:06Z] [iter=14] Primed enclosing-def cache from persisted triples entries=515
+[2026-11-23T12:42:40Z] [iter=14] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1158 MB
+[2026-11-23T12:44:38Z] [iter=14] Position index built positions=1806941 nodes_with_types=2321990 secs=119 mem_mb=4053 MB
+[2026-11-23T12:44:38Z] [iter=14] Step 3: Starting LSP resolution mem_mb=4053 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T12:44:38Z] [iter=14] Resolving target type target_type=call_site count=243920
+[2026-11-23T12:44:41Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=0 resolved=0 errors=0 current=deps/protobuf/ruby/ext/google/protobuf_c/upb.c
+[2026-11-23T13:05:50Z] [iter=14] CHECKPOINT TRIGGERED elapsed_min=30.2 files_completed=0 new_files_this_iter=0 mem_mb=4066 MB
+[2026-11-23T13:05:50Z] [iter=14] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/10b2abe0a87b9da8b6e1d124efa19520d40d96d1.nq.gz triples=30550
+[2026-11-23T13:05:50Z] [iter=14] Checkpoint written, exiting with code 7
+[2026-11-23T13:05:50Z] [iter=14] PHASE END: enrich (checkpointed) elapsed_s=1811 elapsed_min=30.2 files_completed=0
