@@ -1,0 +1,23 @@
+[2026-11-24T11:05:25Z] === ENRICH ITERATION 5 START | repo=apple/coremltools sha=2064aad5 ===
+[2026-11-24T11:05:25Z] [iter=5] PHASE START: enrich repo=apple/coremltools sha=2064aad5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2064aad5-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2064aad547750ed51a18f35e3acf86508f5d7320.nq.gz
+[2026-11-24T11:05:25Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-24T11:06:20Z] [iter=5] AST store loaded triples=4415619 load_secs=54 mem_mb=930 MB
+[2026-11-24T11:06:20Z] [iter=5] Step 2: Finding LSP targets mem_mb=930 MB
+[2026-11-24T11:06:24Z] [iter=5] LSP targets found call_sites=31933 imports=810 extends=125 implements=0 secs=4
+[2026-11-24T11:06:26Z] [iter=5] Loaded checkpoint partial graph triples=54258
+[2026-11-24T11:06:26Z] [iter=5] Primed enclosing-def cache from persisted triples entries=2136
+[2026-11-24T11:06:28Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=930 MB
+[2026-11-24T11:06:43Z] [iter=5] Position index built positions=269584 nodes_with_types=359613 secs=14 mem_mb=1055 MB
+[2026-11-24T11:06:43Z] [iter=5] Step 3: Starting LSP resolution mem_mb=1055 MB already_completed_types=[] already_completed_files=1
+[2026-11-24T11:06:43Z] [iter=5] Resolving target type target_type=call_site count=31933
+[2026-11-24T11:06:44Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=Caffe/caffe.pb.cc
+[2026-11-24T11:29:51Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=24.4 files_done=1 resolved=1524 errors=0 current=CaffeConverterPython.cpp
+[2026-11-24T11:30:40Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=25.3 files_done=3 resolved=1579 errors=0 current=Caffe/Convolution.cpp
+[2026-11-24T11:32:49Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=27.4 files_done=4 resolved=1728 errors=0 current=Caffe/InnerProduct.cpp
+[2026-11-24T11:33:38Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=28.2 files_done=5 resolved=1787 errors=0 current=Caffe/Activation.cpp
+[2026-11-24T11:34:11Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=28.8 files_done=6 resolved=1823 errors=0 current=Caffe/LSTM.cpp
+[2026-11-24T11:35:25Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=30.0 files_done=8 resolved=1910 errors=0 current=Caffe/CaffeConverter.cpp
+[2026-11-24T11:35:30Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=30.1 files_completed=9 new_files_this_iter=8 mem_mb=1074 MB
+[2026-11-24T11:35:30Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2064aad547750ed51a18f35e3acf86508f5d7320.nq.gz triples=70661
+[2026-11-24T11:35:30Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-11-24T11:35:30Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=1805 elapsed_min=30.1 files_completed=9
