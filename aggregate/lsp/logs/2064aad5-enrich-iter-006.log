@@ -1,0 +1,39 @@
+[2026-11-24T11:39:20Z] === ENRICH ITERATION 6 START | repo=apple/coremltools sha=2064aad5 ===
+[2026-11-24T11:39:20Z] [iter=6] PHASE START: enrich repo=apple/coremltools sha=2064aad5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2064aad5-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2064aad547750ed51a18f35e3acf86508f5d7320.nq.gz
+[2026-11-24T11:39:20Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-11-24T11:39:58Z] [iter=6] AST store loaded triples=4415619 load_secs=37 mem_mb=995 MB
+[2026-11-24T11:39:58Z] [iter=6] Step 2: Finding LSP targets mem_mb=995 MB
+[2026-11-24T11:40:03Z] [iter=6] LSP targets found call_sites=31933 imports=810 extends=125 implements=0 secs=5
+[2026-11-24T11:40:06Z] [iter=6] Loaded checkpoint partial graph triples=70661
+[2026-11-24T11:40:06Z] [iter=6] Primed enclosing-def cache from persisted triples entries=2375
+[2026-11-24T11:40:09Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=995 MB
+[2026-11-24T11:40:25Z] [iter=6] Position index built positions=269584 nodes_with_types=359613 secs=16 mem_mb=1089 MB
+[2026-11-24T11:40:25Z] [iter=6] Step 3: Starting LSP resolution mem_mb=1089 MB already_completed_types=[] already_completed_files=9
+[2026-11-24T11:40:25Z] [iter=6] Resolving target type target_type=call_site count=31933
+[2026-11-24T11:40:30Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=0 resolved=0 errors=0 current=Caffe/CaffeConverter.cpp
+[2026-11-24T11:41:18Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=1 resolved=56 errors=0 current=Caffe/Scale.cpp
+[2026-11-24T11:43:13Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=2 resolved=168 errors=0 current=Caffe/Concat.cpp
+[2026-11-24T11:43:47Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=4 resolved=205 errors=0 current=Caffe/Embed.cpp
+[2026-11-24T11:44:43Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=5 resolved=267 errors=0 current=Caffe/Utils-inl.hpp
+[2026-11-24T11:45:21Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=6.0 files_done=7 resolved=314 errors=0 current=Caffe/Flatten.cpp
+[2026-11-24T11:46:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=6.7 files_done=9 resolved=359 errors=0 current=Caffe/Bias.cpp
+[2026-11-24T11:47:19Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=10 resolved=432 errors=0 current=Caffe/Slice.cpp
+[2026-11-24T11:48:23Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=12 resolved=494 errors=0 current=Caffe/Log.cpp
+[2026-11-24T11:48:55Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=14 resolved=526 errors=0 current=Caffe/Reduction.cpp
+[2026-11-24T11:50:10Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=10.8 files_done=16 resolved=600 errors=0 current=Caffe/Exp.cpp
+[2026-11-24T11:50:51Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=19 resolved=640 errors=0 current=Caffe/Softmax.cpp
+[2026-11-24T11:51:30Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=22 resolved=678 errors=0 current=CaffeConverterLib.hpp
+[2026-11-24T11:52:14Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=27 resolved=790 errors=0 current=coremltools/test/test_tf_numeric.py
+[2026-11-24T11:57:41Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=18.3 files_done=29 resolved=1422 errors=0 current=coremltools/converters/sklearn/_converter_internal.py
+[2026-11-24T11:59:32Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=30 resolved=1496 errors=0 current=coremltools/test/test_SVC.py
+[2026-11-24T12:00:06Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=20.8 files_done=31 resolved=1583 errors=0 current=coremltools/test/test_keras2_numeric.py
+[2026-11-24T12:02:50Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=23.5 files_done=32 resolved=1977 errors=0 current=coremltools/converters/sklearn/_gradient_boosting_regressor.py
+[2026-11-24T12:03:24Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=24.1 files_done=34 resolved=2136 errors=0 current=coremltools/test/test_glm_classifier.py
+[2026-11-24T12:04:03Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=24.7 files_done=36 resolved=2333 errors=0 current=coremltools/converters/keras/_topology.py
+[2026-11-24T12:06:48Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=37 resolved=2546 errors=0 current=coremltools/converters/keras/_topology2.py
+[2026-11-24T12:08:25Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=29.1 files_done=38 resolved=2748 errors=0 current=coremltools/test/test_numpy_nn_layers.py
+[2026-11-24T12:08:58Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=29.6 files_done=39 resolved=2856 errors=0 current=coremltools/converters/libsvm/_libsvm_converter.py
+[2026-11-24T12:09:22Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=50 new_files_this_iter=41 mem_mb=1122 MB
+[2026-11-24T12:09:22Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2064aad547750ed51a18f35e3acf86508f5d7320.nq.gz triples=99104
+[2026-11-24T12:09:23Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-11-24T12:09:23Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=1802 elapsed_min=30.0 files_completed=50
