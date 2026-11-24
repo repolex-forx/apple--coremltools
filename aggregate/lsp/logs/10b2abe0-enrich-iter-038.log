@@ -1,0 +1,17 @@
+[2026-11-24T02:36:52Z] === ENRICH ITERATION 38 START | repo=apple/coremltools sha=10b2abe0 ===
+[2026-11-24T02:36:52Z] [iter=38] PHASE START: enrich repo=apple/coremltools sha=10b2abe0 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/10b2abe0-enrich-iter-038.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/10b2abe0a87b9da8b6e1d124efa19520d40d96d1.nq.gz
+[2026-11-24T02:36:52Z] [iter=38] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-11-24T02:43:34Z] [iter=38] AST store loaded triples=28228624 load_secs=390 mem_mb=1194 MB
+[2026-11-24T02:43:34Z] [iter=38] Step 2: Finding LSP targets mem_mb=1194 MB
+[2026-11-24T02:44:46Z] [iter=38] LSP targets found call_sites=243920 imports=4093 extends=1490 implements=2 secs=72
+[2026-11-24T02:44:49Z] [iter=38] Loaded checkpoint partial graph triples=52159
+[2026-11-24T02:44:49Z] [iter=38] Primed enclosing-def cache from persisted triples entries=770
+[2026-11-24T02:45:43Z] [iter=38] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1194 MB
+[2026-11-24T02:49:12Z] [iter=38] Position index built positions=1806941 nodes_with_types=2321990 secs=210 mem_mb=4096 MB
+[2026-11-24T02:49:12Z] [iter=38] Step 3: Starting LSP resolution mem_mb=4096 MB already_completed_types=[] already_completed_files=3
+[2026-11-24T02:49:12Z] [iter=38] Resolving target type target_type=call_site count=243920
+[2026-11-24T02:49:16Z] [iter=38] HEARTBEAT target_type=call_site elapsed_min=12.4 files_done=0 resolved=0 errors=0 current=deps/protobuf/src/google/protobuf/compiler/cpp/cpp_message.cc
+[2026-11-24T03:07:15Z] [iter=38] CHECKPOINT TRIGGERED elapsed_min=30.4 files_completed=3 new_files_this_iter=0 mem_mb=4104 MB
+[2026-11-24T03:07:15Z] [iter=38] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/10b2abe0a87b9da8b6e1d124efa19520d40d96d1.nq.gz triples=52760
+[2026-11-24T03:07:16Z] [iter=38] Checkpoint written, exiting with code 7
+[2026-11-24T03:07:16Z] [iter=38] PHASE END: enrich (checkpointed) elapsed_s=1823 elapsed_min=30.4 files_completed=3
