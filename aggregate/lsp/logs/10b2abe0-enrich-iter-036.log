@@ -1,0 +1,17 @@
+[2026-11-24T01:30:03Z] === ENRICH ITERATION 36 START | repo=apple/coremltools sha=10b2abe0 ===
+[2026-11-24T01:30:03Z] [iter=36] PHASE START: enrich repo=apple/coremltools sha=10b2abe0 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/10b2abe0-enrich-iter-036.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/10b2abe0a87b9da8b6e1d124efa19520d40d96d1.nq.gz
+[2026-11-24T01:30:03Z] [iter=36] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-11-24T01:37:59Z] [iter=36] AST store loaded triples=28228624 load_secs=471 mem_mb=1140 MB
+[2026-11-24T01:37:59Z] [iter=36] Step 2: Finding LSP targets mem_mb=1140 MB
+[2026-11-24T01:38:42Z] [iter=36] LSP targets found call_sites=243920 imports=4093 extends=1490 implements=2 secs=43
+[2026-11-24T01:38:44Z] [iter=36] Loaded checkpoint partial graph triples=49686
+[2026-11-24T01:38:44Z] [iter=36] Primed enclosing-def cache from persisted triples entries=747
+[2026-11-24T01:39:19Z] [iter=36] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1140 MB
+[2026-11-24T01:41:08Z] [iter=36] Position index built positions=1806941 nodes_with_types=2321990 secs=109 mem_mb=4026 MB
+[2026-11-24T01:41:08Z] [iter=36] Step 3: Starting LSP resolution mem_mb=4026 MB already_completed_types=[] already_completed_files=1
+[2026-11-24T01:41:08Z] [iter=36] Resolving target type target_type=call_site count=243920
+[2026-11-24T01:41:10Z] [iter=36] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=0 resolved=0 errors=0 current=deps/protobuf/src/google/protobuf/wrappers.pb.cc
+[2026-11-24T02:00:19Z] [iter=36] CHECKPOINT TRIGGERED elapsed_min=30.3 files_completed=1 new_files_this_iter=0 mem_mb=4035 MB
+[2026-11-24T02:00:19Z] [iter=36] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/10b2abe0a87b9da8b6e1d124efa19520d40d96d1.nq.gz triples=50847
+[2026-11-24T02:00:19Z] [iter=36] Checkpoint written, exiting with code 7
+[2026-11-24T02:00:19Z] [iter=36] PHASE END: enrich (checkpointed) elapsed_s=1816 elapsed_min=30.3 files_completed=1
